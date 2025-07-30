@@ -30,8 +30,11 @@ public class Item {
         };
     }
 
-    public void printItem(String name, double price){
+    public static void printItem(String name, double price){
         System.out.printf("%20s:%6.2f%n", name, price);
+    }
+    public void printItem(){
+        printItem(getName(),getAdjustedPrice());
     }
 
 }
